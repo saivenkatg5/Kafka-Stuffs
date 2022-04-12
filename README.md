@@ -13,7 +13,7 @@ source - https://kafka.apache.org/
   <summary> 1. How to create a topics in kafka ? </summary>
   <p>
     
- Creating the Kafka topic with 3 partitions and 3 replications. Please make sure you have adequate amount of brokers especially when you specify replication facotr is 3 (you must have 3 brokers added in the cluster).
+ Creating the Kafka topic with 3 partitions and 3 replications. Please make sure you have adequate amount of brokers especially when you specify replication factor is 3 (you must have 3 brokers added in the cluster).
     To know the number of brokers in the kafka cluster, Login to Ambari/CM and navigate to kafka service where you will find the running brokers listed and another way is to check the broker znode in zookeeper.
 
 ```console
@@ -34,7 +34,7 @@ kafka-topics.sh --zookeeper localhost:2181 --topic first_topic --create --partit
   <summary> 2. How to list a topics in kafka ? </summary>
   <p>
     
-    To list all the topics in a cluster including (system genrated topics)
+    To list all the topics in a cluster including (system genarated topics)
 
 ```console
 kafka-topics.sh --zookeeper localhost:2181 --list
@@ -43,6 +43,20 @@ __consumer_offsets
 first_topic
 second_topic
 test
+```
+  </p>
+</details>   
+
+---
+<details>
+
+  <summary> 3. How to describe a topics in kafka ? </summary>
+  <p>
+    
+    To describe a topic and get information about partition,replication factor 
+
+```console
+kafka-topics.sh --zookeeper localhost:2181 --describe --topic first_topic
 ```
   </p>
 </details>   
