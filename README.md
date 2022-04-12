@@ -27,3 +27,24 @@ kafka-topics.sh --zookeeper localhost:2181 --topic first_topic --create --partit
 ```
   </p>
 </details>   
+
+---
+<details>
+
+  <summary> 2. How to list a topics in kafka ? </summary>
+  <p>
+    
+    To list all the topics in a cluster including (system genrated topics)
+
+```console
+kafka-topics.sh --zookeeper localhost:2181 --list
+
+__consumer_offsets
+first_topic
+second_topic
+test
+```
+  </p>
+</details>   
+
+---
