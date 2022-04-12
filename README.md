@@ -4,6 +4,8 @@ Kafka is a distributed system consisting of servers and clients that communicate
 
 source - https://kafka.apache.org/
 
+### Important Note: If you use higher version of Kafka v2.2+, We highly recommend you to use --bootstrap-server option wherever zookeeper comes in kafka because zookeeper depedency will be removed soon from Kafka version 3.
+
 ## Kafka Commands 
 
 <details>
